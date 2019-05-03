@@ -1,0 +1,148 @@
+\documentclass[a0paper,portrait,margin=1.5cm]{csposter}
+
+\usepackage{booktabs} % Top and bottom rules for table
+\usepackage{wrapfig} % Allows wrapping text around tables and figures
+
+\begin{document}
+\background{
+% Set the background to an image (background.pdf)
+}
+
+\begin{poster}{
+grid=false,
+headerColorOne=white, % Background color for the header in the content boxes (left side)
+headerColorTwo=blue, % Background color for the header in the content boxes (right side)
+headershape=roundedright, % Specify the rounded corner in the content box headers
+background=shadelr,
+bgColorOne=yellow,
+bgColorTwo=orange,
+headerborder=open, % Change to closed for a line under the content box headers
+headerheight=9cm,
+columns=3,
+colspacing=18pt
+}
+{
+% keep empty
+}
+{
+Unnecessarily Complicated Research Title
+}
+{
+John Smith \& James Smith
+}
+{
+University and Department Name 
+}
+{
+author(s) email(s)
+}
+{
+\includegraphics[scale=0.12]{figures/logo.png}
+}
+
+\headerbox{Box1}{name=box1,column=0,row=0, height=0.3, textborder=rounded, borderColor=gray}{
+
+
+\begin{enumerate}
+\item Lorem ipsum dolor sit amet, consectetur.
+\item Nullam at mi nisl. Vestibulum est purus, ultricies cursus volutpat sit amet, vestibulum eu.
+\item Praesent tortor libero, vulputate quis elementum a, iaculis.
+\item Phasellus a quam mauris, non varius mauris. Fusce tristique, enim tempor varius porta, elit purus commodo velit, pretium mattis ligula nisl nec ante.
+\item Ut adipiscing accumsan sapien, sit amet pretium.
+\item Estibulum est purus, ultricies cursus volutpat
+\item Nullam at mi nisl. Vestibulum est purus, ultricies cursus volutpat sit amet, vestibulum eu.
+\item Praesent tortor libero, vulputate quis elementum a, iaculis.
+\end{enumerate}
+
+}
+
+\headerbox{Box2}{name=box2,column=1,row=0, span=2, height=0.3, textborder=rounded }{
+
+Nulla vel nisl sed mauris auctor mollis non sed. 
+
+\begin{equation}
+E = mc^{2}
+\label{eqn:Einstein}
+\end{equation}
+
+Curabitur mi sem, pulvinar quis aliquam rutrum. (1) edf (2)
+, $\Omega=[-1,1]^3$, maecenas leo est, ornare at. $z=-1$ edf $z=1$ sed interdum felis dapibus sem. $x$ set $y$ ytruem. 
+Turpis $j$ amet accumsan enim $y$-lacina; 
+ref $k$-viverra nec porttitor $x$-lacina. 
+
+Vestibulum ac diam a odio tempus congue. Vivamus id enim nisi:
+
+\begin{eqnarray}
+\cos\bar{\phi}_k Q_{j,k+1,t} + Q_{j,k+1,x}+\frac{\sin^2\bar{\phi}_k}{T\cos\bar{\phi}_k} Q_{j,k+1} &=&\nonumber\\ 
+-\cos\phi_k Q_{j,k,t} + Q_{j,k,x}-\frac{\sin^2\phi_k}{T\cos\phi_k} Q_{j,k}\label{edgek}
+\end{eqnarray}
+
+}
+
+\headerbox{Box3}{name=box3,column=0,row=1, height=0.3, textborder=rounded, below=box1}{
+\begin{center}
+    \includegraphics[scale=0.6]{figures/placeholder.jpg}
+\end{center}
+}
+
+\headerbox{Box3}{name=box3,column=1,row=1, height=0.3, textborder=rounded, below=box2}{
+
+Donec faucibus purus at tortor egestas eu fermentum dolor facilisis. Maecenas tempor dui eu neque fringilla rutrum. Mauris \emph{lobortis} nisl accumsan. Aenean vitae risus ante.
+%
+\begin{wraptable}{l}{12cm} % Left or right alignment is specified in the first bracket, the width of the table is in the second
+\begin{tabular}{l l l}
+\toprule
+\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+\midrule
+Treatment 1 & 0.0003262 & 0.562 \\
+Treatment 2 & 0.0015681 & 0.910 \\
+Treatment 3 & 0.0009271 & 0.296 \\
+\bottomrule
+\end{tabular}
+\end{wraptable}
+
+}
+
+\headerbox{Box4}{name=box4,column=2,row=1, height=0.3, textborder=rounded, below=box2}{
+
+\begin{itemize}
+\item Pellentesque eget orci eros. Fusce ultricies, tellus et pellentesque fringilla, ante massa luctus libero, quis tristique purus urna nec nibh. Phasellus fermentum rutrum elementum. Nam quis justo lectus.
+\item Vestibulum sem ante, hendrerit a gravida ac, blandit quis magna.
+\item Donec sem metus, facilisis at condimentum eget, vehicula ut massa. Morbi consequat, diam sed convallis tincidunt, arcu nunc.
+\item Nunc at convallis urna. isus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing.
+\end{itemize}
+
+}
+
+\headerbox{Box5}{name=box5,column=0,row=2, span=2, height=0.35, textborder=rounded,
+borderColor=red, below=box3}{
+
+Aliquam non lacus dolor, \textit{a aliquam quam} \cite{prevWork1}. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla in nibh mauris. Donec vel ligula nisi, a lacinia arcu. Sed mi dui, malesuada vel consectetur et, egestas porta nisi. Sed eleifend pharetra dolor, et dapibus est vulputate eu. \textbf{Integer faucibus elementum felis vitae fringilla.} In hac habitasse platea dictumst. Duis tristique rutrum nisl, nec vulputate elit porta ut. Donec sodales sollicitudin turpis sed convallis. Etiam mauris ligula, blandit adipiscing condimentum eu, dapibus pellentesque risus.
+
+\textit{Aliquam auctor}, metus id ultrices porta, risus enim cursus sapien, quis iaculis sapien tortor sed odio. Mauris ante orci, euismod vitae tincidunt eu, porta ut neque. Aenean sapien est, viverra vel lacinia nec, venenatis eu nulla. Maecenas ut nunc nibh, et tempus libero. Aenean vitae risus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing.
+
+}
+
+\headerbox{Box6}{name=box6,column=2,row=2,below=box4, textborder=rounded, borderColor=gray, height=0.18}{
+
+\begin{thebibliography}{1}
+\bibitem{prevWork1} Knuth, Donald Ervin. \textit{The art of computer programming: sorting and searching}. Vol. 3. Pearson Education, 1997.
+
+\bibitem{prevWork2} Knuth, Donald E. \textit{Art of computer programming, volume 2: Seminumerical algorithms}. Addison-Wesley Professional, 2014.
+
+\end{thebibliography}
+
+}
+
+\headerbox{}{name=box7,column=2,row=2,below=box6, textborder=none}{
+
+
+\qrcode{figures/qr-code}{figures/smartphoneBlack}{
+\textbf{Take a picture} to
+\\download the full paper
+}
+
+}
+
+\end{poster}
+\end{document}
